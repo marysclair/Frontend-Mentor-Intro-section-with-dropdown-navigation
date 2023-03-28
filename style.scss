@@ -1,24 +1,35 @@
 $fonte: 'Epilogue', sans-serif;
-$bg-primary: hsl(0, 0%, 98%);
+$primary: hsl(0, 0%, 98%);
+$secondary: hsl(0, 0%, 41%);
 
 body {
     font-family: $fonte;
     min-height: 100vh;
-    background-color: $bg-primary;
+    background-color: $primary;
 }
 
 *{
     font-size: 14px;
+    color: $secondary;
+    font-weight: 700;
 }
 
+.navbar-toggler{
+    border: none;
+}
 .iconeDropd{
     width: 14px;
     height: 16px;
 }
 
 .dropdown-menu{
-    background-color: $bg-primary;
+    background-color: $primary;
     min-width: 100%;
+
+    .dropdown-item{
+        font-weight:700;
+        color: $secondary;
+    }
 }
 
 .dropdown-toggle::after {
@@ -26,5 +37,15 @@ body {
 }
 
 .bi{
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    font-weight: bold !important;
+}
+
+@media screen and (min-width: 992px) {
+    .dropdown-menu{
+        box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+    }
 }

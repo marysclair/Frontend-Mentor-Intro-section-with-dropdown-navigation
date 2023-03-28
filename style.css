@@ -6,6 +6,12 @@ body {
 
 * {
   font-size: 14px;
+  color: hsl(0, 0%, 41%);
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  border: none;
 }
 
 .iconeDropd {
@@ -17,11 +23,26 @@ body {
   background-color: hsl(0, 0%, 98%);
   min-width: 100%;
 }
+.dropdown-menu .dropdown-item {
+  font-weight: 700;
+  color: hsl(0, 0%, 41%);
+}
 
 .dropdown-toggle::after {
   display: none !important;
 }
 
 .bi {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bi::before, [class^=bi-]::before, [class*=" bi-"]::before {
+  font-weight: bold !important;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown-menu {
+    box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+  }
 }/*# sourceMappingURL=style.css.map */
