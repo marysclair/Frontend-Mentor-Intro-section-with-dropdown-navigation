@@ -11,4 +11,17 @@ body {
 .iconeDropd {
   width: 14px;
   height: 16px;
+}
+
+.dropdown-menu {
+  background-color: hsl(0, 0%, 98%);
+  min-width: 100%;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.bi {
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -15,3 +15,16 @@ body {
     width: 14px;
     height: 16px;
 }
+
+.dropdown-menu{
+    background-color: $bg-primary;
+    min-width: 100%;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.bi{
+    font-size: 10px;
+}
