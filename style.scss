@@ -1,0 +1,17 @@
+$fonte: 'Epilogue', sans-serif;
+$bg-primary: hsl(0, 0%, 98%);
+
+body {
+    font-family: $fonte;
+    min-height: 100vh;
+    background-color: $bg-primary;
+}
+
+*{
+    font-size: 14px;
+}
+
+.iconeDropd{
+    width: 14px;
+    height: 16px;
+}
