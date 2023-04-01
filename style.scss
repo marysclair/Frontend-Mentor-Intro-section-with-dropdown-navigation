@@ -1,17 +1,23 @@
 $fonte: 'Epilogue', sans-serif;
 $primary: hsl(0, 0%, 98%);
 $secondary: hsl(0, 0%, 41%);
+$terciary: hsl(0, 0%, 8%);
 
 body {
     font-family: $fonte;
     min-height: 100vh;
     background-color: $primary;
+
+    .h1{
+        line-height: 1;
+        font-size: 4.5rem;
+        color: $terciary;
+        font-weight: 700;
+    }
 }
 
 *{
-    font-size: 14px;
     color: $secondary;
-    font-weight: 700;
 }
 
 .navbar-toggler{
@@ -23,11 +29,10 @@ body {
 }
 
 .dropdown-menu{
-    background-color: $primary;
+    background-color: white;
     min-width: 100%;
 
     .dropdown-item{
-        font-weight:700;
         color: $secondary;
     }
 }
@@ -44,8 +49,49 @@ body {
     font-weight: bold !important;
 }
 
-@media screen and (min-width: 992px) {
+.imageHeroDesktop{
+        height: 500px;
+}
+.imageHeroMobile{
+    width: 100%;
+}
+.p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.btn{
+    background-color: $terciary;
+    font-size: 16px;
+}
+
+.icones{
+    width: 5rem;
+}
+
+.btn.btn-dark {
+    transition: all .3s ease;
+  }
+
+  .btn.btn-dark:hover {
+    background-color: transparent;
+    color: $terciary;
+  }
+
+@media screen and (max-width: 992px) {
     .dropdown-menu{
-        box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+        box-shadow: none!important;
+    }
+    .p{
+        text-align: center;
+    }
+    body{
+        background-color: white;
+        .h1{
+            font-size: 2.1rem;
+        }
+    }
+    .icones{
+        width: 3.8rem;
     }
 }

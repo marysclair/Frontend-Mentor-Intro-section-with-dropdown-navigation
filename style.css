@@ -3,11 +3,15 @@ body {
   min-height: 100vh;
   background-color: hsl(0, 0%, 98%);
 }
+body .h1 {
+  line-height: 1;
+  font-size: 4.5rem;
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
 
 * {
-  font-size: 14px;
   color: hsl(0, 0%, 41%);
-  font-weight: 700;
 }
 
 .navbar-toggler {
@@ -20,11 +24,10 @@ body {
 }
 
 .dropdown-menu {
-  background-color: hsl(0, 0%, 98%);
+  background-color: white;
   min-width: 100%;
 }
 .dropdown-menu .dropdown-item {
-  font-weight: 700;
   color: hsl(0, 0%, 41%);
 }
 
@@ -41,8 +44,51 @@ body {
   font-weight: bold !important;
 }
 
-@media screen and (min-width: 992px) {
+.imageHeroDesktop {
+  height: 500px;
+}
+
+.imageHeroMobile {
+  width: 100%;
+}
+
+.p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.btn {
+  background-color: hsl(0, 0%, 8%);
+  font-size: 16px;
+}
+
+.icones {
+  width: 5rem;
+}
+
+.btn.btn-dark {
+  transition: all 0.3s ease;
+}
+
+.btn.btn-dark:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 8%);
+}
+
+@media screen and (max-width: 992px) {
   .dropdown-menu {
-    box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+    box-shadow: none !important;
+  }
+  .p {
+    text-align: center;
+  }
+  body {
+    background-color: white;
+  }
+  body .h1 {
+    font-size: 2.1rem;
+  }
+  .icones {
+    width: 3.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
