@@ -18,7 +18,7 @@ Os usuários devem ser capazes de:
 
 ### Acesso ao site
 
-Para usar o site produzido, você pode usar localmente (usando um fork nesse repositório e clonando para seu despositivo). Ou pode acessar através desse link pelo Github Pages: [Add live site URL here](https://your-live-site-url.com)
+Para usar o site produzido, você pode usar localmente (usando um fork nesse repositório e clonando para seu despositivo). Ou pode acessar através desse link pelo Github Pages: [link para o site](https://marysclair.github.io/Frontend-Mentor-Intro-section-with-dropdown-navigation/)
 
 ## Processos de desenvolvimento
 
@@ -34,7 +34,11 @@ Para usar o site produzido, você pode usar localmente (usando um fork nesse rep
 - Aprofundei meu conhecimento sobre Bootstrap e SASS através do desafio proposto, tendo agora mais prática e me sentindo mais confortável com essas tecnologias.
 - Ao usar Git para versionamento do código, tive maior controle sobre o desenvolvimento do projeto.
 
-### Screenshots
+## Screenshots da versão final do projeto
+
+### Versão Desktop
 
 ![](./design/versaoFinalDesktop.png)
+
+### Versão Mobile
 ![](./design/versaoFinalMobile.png)
